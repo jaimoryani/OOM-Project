@@ -1,0 +1,25 @@
+package Project;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.CheckboxGroup;
+
+public class Dialogue {
+    void entrance(String s) {
+        JOptionPane.showMessageDialog(null, s, "Welcome to ScaleiT", JOptionPane.INFORMATION_MESSAGE);
+    }
+    String getName(){
+        return JOptionPane.showInputDialog(null,"Enter your name","NAME",JOptionPane.QUESTION_MESSAGE);
+    }
+    int confirm(String naam){
+        return JOptionPane.showConfirmDialog(null,"Hello "+naam+",would you like to try ScaleIt ?" ,"Confirmation",JOptionPane.YES_NO_OPTION);
+    }
+    int ChooseDimension(Object obj){
+        Object[] cbg= ((Dimension)obj).cbg;
+        return JOptionPane.showConfirmDialog(null,cbg,"Choose the Dimensions" ,JOptionPane.OK_CANCEL_OPTION);
+    }
+    int ShapeSelect(String[] types, String str) {
+        return JOptionPane.showOptionDialog(null, str, "Shapes", 0, JOptionPane.QUESTION_MESSAGE, null, types, 0);
+    }
+
+}
