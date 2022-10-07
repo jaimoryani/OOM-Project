@@ -18,8 +18,11 @@ public class Dialogue {
         Object[] cbg= ((Dimension)obj).cbg;
         return JOptionPane.showConfirmDialog(null,cbg,"Choose the Dimensions" ,JOptionPane.OK_CANCEL_OPTION);
     }
-    int ShapeSelect(String[] types, String str) {
-        return JOptionPane.showOptionDialog(null, str, "Shapes", 0, JOptionPane.QUESTION_MESSAGE, null, types, 0);
+    int ShapeSelect2D(String[] options) {
+        return JOptionPane.showOptionDialog(null,"Select a 2D shape", "Shapes", 0, JOptionPane.QUESTION_MESSAGE, null, options, 0);
+    }
+    int ShapeSelect3D(String[] options) {
+        return JOptionPane.showOptionDialog(null,"Select a 3D shape", "Shapes", 0, JOptionPane.QUESTION_MESSAGE, null, options, 0);
     }
 
 }
