@@ -4,7 +4,9 @@ import java.awt.Polygon;
 import java.awt.Rectangle;
 
 public class Shape2D {
+    final int dimension=2;
     String name;
-    Shape rectangle , circle, square, triangle, ellipse, star;
-
+    Shape2D(String x){
+        name="x";
+    }
 }

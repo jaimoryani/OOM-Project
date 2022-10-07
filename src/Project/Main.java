@@ -25,13 +25,13 @@ class MyFrame extends JFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
-        //l.setText("Clicked");
+
     }
 }
 public class Main {
     public static void main(String[] args) {
         MyFrame f= new MyFrame();
-        f.setSize(400,400);
+        f.setSize(800,800);
         f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         String name=f.d.getName();
         if(name.isBlank()){
