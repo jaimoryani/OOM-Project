@@ -27,13 +27,13 @@ class MyFrame extends JFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
-        //l.setText("Clicked");
+
     }
 }
 public class Main {
     public static void main(String[] args) {
         MyFrame f= new MyFrame();
-        f.setSize(400,400);
+        f.setSize(800,800);
         f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         String name=f.d.getName();
         if(name.isBlank()){
@@ -47,7 +47,18 @@ public class Main {
             if(!x&&!y)System.exit(0);
             if(!x)f.tb1.remove(f.D2);
             if(!y)f.tb1.remove(f.D3);
-
+            ShapeList2D lis2D=new ShapeList2D();
+            String[] opts_2D=new String[lis2D.shape2DS.size()];
+            for(int i=0;i<lis2D.shape2DS.size();i++){
+                opts_2D[i]=lis2D.shape2DS.get(i).name;
+            }
+            int index2D=-1,index3D=-1;
+            if(x){
+                index2D=f.d.ShapeSelect2D(opts_2D);
+            }
+            if(y){
+                //index3D=f.d.ShapeSelect3D(opts_3D);
+            }
         }
         f.setVisible(true);
     }

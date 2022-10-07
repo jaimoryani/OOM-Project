@@ -12,5 +12,4 @@ public class Shape2D {
     Shape2D(String name){
         this.name=name;
     }
-
 }
