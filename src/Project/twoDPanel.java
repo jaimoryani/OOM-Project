@@ -14,6 +14,8 @@ public class twoDPanel extends JPanel {
     JButton change=new JButton("Change Color");
     final Shape2D shape2= new Shape2D();
     double angle;
+    Color color=Color.RED,color1,color2;
+    int button_pressed,color_button_pressed;
     void adder(){
         rc.addActionListener(new EventHandler2D());
         rac.addActionListener(new EventHandler2D());
@@ -106,11 +108,35 @@ public class twoDPanel extends JPanel {
             g1.fill(rotatedShape);
         }
     }
-    static class EventHandler2D implements ActionListener {
+    class EventHandler2D implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
+            if(e.getSource() == rc) {
+                color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
+                angle += 0.1;
+                button_pressed++;
+            }
 
+            if(e.getSource() == rac) {
+                color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
+                angle -= 0.1;
+                button_pressed++;
+            }
+            if(e.getSource() == change) {
+                color_button_pressed++;
+
+                if(color_button_pressed % 2 == 0) {
+                    color1 = Color.cyan;
+                    color2 = Color.green;
+                }
+                if(color_button_pressed % 2 != 0) {
+                    color1 = Color.red;
+                    color2 = Color.magenta;
+                }
+            }
+            //setLayout(null);
+            repaint();
         }
     }
 }

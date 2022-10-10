@@ -62,7 +62,7 @@ public class Main {
             for(int i=0;i<lis3D.shape3DS.size();i++){
                 opts_3D[i]=lis3D.shape3DS.get(i).name;
             }
-            int index2D=-1,index3D=-1;
+            int index2D,index3D;
             if(x){
                 index2D=f.d.ShapeSelect2D(opts_2D);
 
