@@ -16,14 +16,19 @@ class MyFrame extends JFrame implements ActionListener {
         d.entrance("Hello");
         Container c=getContentPane();
         tb1=new JTabbedPane();
-        D2=new twoDPanel();
-        D3=new threeDPanel();
-        tb1.addTab("2D",D2);
-        tb1.addTab("3D",D3);
-        D2.setOpaque(true);
-        D3.setOpaque(true);
         c.add(tb1);
+    }
+    public void makePane2D(int index){
 
+        D2=new twoDPanel(index);
+        D2.adder();
+        tb1.addTab("2D",D2);
+       // D2.setOpaque(true);
+    }
+    public void makePanel3D(int index){
+        D3=new threeDPanel(index);
+        tb1.addTab("3D",D3);
+        //D3.setOpaque(true);
     }
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -60,9 +65,12 @@ public class Main {
             int index2D=-1,index3D=-1;
             if(x){
                 index2D=f.d.ShapeSelect2D(opts_2D);
+
+                f.makePane2D(index2D);
             }
             if(y){
                 index3D=f.d.ShapeSelect3D(opts_3D);
+                f.makePanel3D(index3D);
             }
         }
         f.setVisible(true);

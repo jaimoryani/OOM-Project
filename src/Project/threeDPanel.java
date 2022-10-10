@@ -7,13 +7,11 @@ public class threeDPanel extends JPanel {
     JButton rc=new JButton("Rotate Clockwise");
     JButton rac=new JButton("Rotate AntiClockwise");
     JButton change=new JButton("Change Color");
-    threeDPanel(){
+    threeDPanel(int index){
         setLayout(new FlowLayout());
         this.add(rc);
         this.add(rac);
         this.add(change);
-    }
-    public void getShapeIndex(int index){
-        this.index = index;
+        this.index=index;
     }
 }
