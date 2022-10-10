@@ -41,6 +41,8 @@ public class twoDPanel extends JPanel {
         shape2.triangle = new Polygon(new int[] {400,500,500},new int[] {250,225,275},3);
         rotatedShape=trans.createTransformedShape(shape2.circle);
         g1.fill(rotatedShape);
+        this.remove(rc);
+        this.add(rc);
 
     }
 }
