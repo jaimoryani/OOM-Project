@@ -59,28 +59,28 @@ public class twoDPanel extends JPanel {
         if(index == 1) {
             Color color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
             g1.setColor(color);
-            rotatedShape = trans.createTransformedShape(shape2.ellipse);
+            rotatedShape = trans.createTransformedShape(shape2.rectangle);
             g1.fill(rotatedShape);
         }
 
         if(index == 2) {
             Color color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
             g1.setColor(color);
-            rotatedShape = trans.createTransformedShape(shape2.triangle);
+            rotatedShape = trans.createTransformedShape(shape2.circle);
             g1.fill(rotatedShape);
         }
 
         if(index == 3) {
             Color color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
             g1.setColor(color);
-            rotatedShape = trans.createTransformedShape(shape2.rectangle);
+            rotatedShape = trans.createTransformedShape(shape2.triangle);
             g1.fill(rotatedShape);
         }
 
         if(index == 4) {
             Color color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
             g1.setColor(color);
-            rotatedShape = trans.createTransformedShape(shape2.circle);
+            rotatedShape = trans.createTransformedShape(shape2.ellipse);
             g1.fill(rotatedShape);
         }
 
