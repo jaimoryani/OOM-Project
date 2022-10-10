@@ -23,7 +23,7 @@ class MyFrame extends JFrame implements ActionListener {
         D2=new twoDPanel(index);
         D2.adder();
         tb1.addTab("2D",D2);
-       // D2.setOpaque(true);
+
     }
     public void makePanel3D(int index){
         D3=new threeDPanel(index);
