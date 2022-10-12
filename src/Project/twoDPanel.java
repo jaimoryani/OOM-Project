@@ -14,8 +14,7 @@ public class twoDPanel extends JPanel {
     JButton change=new JButton("Change Color");
     final Shape2D shape2= new Shape2D();
     double angle;
-    Color color=Color.RED,color1,color2;
-    int button_pressed,color_button_pressed;
+    Color color=new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
     void adder(){
         rc.addActionListener(new EventHandler2D());
         rac.addActionListener(new EventHandler2D());
@@ -28,15 +27,18 @@ public class twoDPanel extends JPanel {
     twoDPanel(int index){
         setLayout(new FlowLayout());
         this.index=index;
-        this.repaint();
     }
     public void paint(Graphics g){
+        super.paint(g);
         Graphics2D g1 = (Graphics2D)g;
         AffineTransform trans = new AffineTransform();
-        trans.rotate(angle,250,250);
-        g1.setColor(new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256)));
+        g1.setColor(color);
         Shape rotatedShape;
-        shape2.circle = new Ellipse2D.Double(100.0d,100.0d,100,100.0d);
+        java.awt.Rectangle temp=this.getBounds();
+        int h=temp.height;
+        int w=temp.width;
+        trans.rotate(angle,(float)h/2,(float)h/2);
+        shape2.circle = new Ellipse2D.Double(450.0d,450.0d,100.0d,100.0d);
         shape2.ellipse = new Ellipse2D.Double(100.0d,100.0d,100.0d,50.0d);
         shape2.square = new Rectangle(300,300,100,100);
         shape2.rectangle = new Rectangle(300,300,100,50);
@@ -109,33 +111,20 @@ public class twoDPanel extends JPanel {
         }
     }
     class EventHandler2D implements ActionListener {
-
         @Override
         public void actionPerformed(ActionEvent e) {
             if(e.getSource() == rc) {
                 color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
                 angle += 0.1;
-                button_pressed++;
             }
 
             if(e.getSource() == rac) {
                 color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
                 angle -= 0.1;
-                button_pressed++;
             }
             if(e.getSource() == change) {
-                color_button_pressed++;
-
-                if(color_button_pressed % 2 == 0) {
-                    color1 = Color.cyan;
-                    color2 = Color.green;
-                }
-                if(color_button_pressed % 2 != 0) {
-                    color1 = Color.red;
-                    color2 = Color.magenta;
-                }
+                color=new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
             }
-            //setLayout(null);
             repaint();
         }
     }

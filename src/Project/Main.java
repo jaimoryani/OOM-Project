@@ -39,6 +39,8 @@ public class Main {
     public static void main(String[] args) {
         MyFrame f= new MyFrame();
         f.setSize(800,800);
+        f.setResizable(false);
+        f.setLocationRelativeTo(null);
         f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         String name=f.d.getName();
         if(name.isBlank()){
