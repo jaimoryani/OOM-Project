@@ -28,7 +28,7 @@ public class twoDPanel extends JPanel {
         setLayout(new FlowLayout());
         this.index=index;
     }
-    public void paint(Graphics g){
+    public void paint(Graphics g) {
         super.paint(g);
         Graphics2D g1 = (Graphics2D)g;
         AffineTransform trans = new AffineTransform();
@@ -37,17 +37,17 @@ public class twoDPanel extends JPanel {
         java.awt.Rectangle temp=this.getBounds();
         int h=temp.height;
         int w=temp.width;
-        trans.rotate(angle,(float)h/2,(float)h/2);
-        shape2.circle = new Ellipse2D.Double(450.0d,450.0d,100.0d,100.0d);
-        shape2.ellipse = new Ellipse2D.Double(100.0d,100.0d,100.0d,50.0d);
-        shape2.square = new Rectangle(300,300,100,100);
-        shape2.rectangle = new Rectangle(300,300,100,50);
-        shape2.triangle = new Polygon(new int[] {400,500,500},new int[] {250,225,275},3);
-        shape2.t1 = new Polygon(new int[] { 425, 475, 450 }, new int[] { 275, 275, 225 }, 3);
-        shape2.t2 = new Polygon(new int[] { 475, 475, 525 }, new int[] { 275, 325, 300 }, 3);
-        shape2.t3 = new Polygon(new int[] { 475, 425, 450 }, new int[] { 325, 325, 375 }, 3);
-        shape2.t4 = new Polygon(new int[] { 425, 425, 375 }, new int[] { 325, 275, 300 }, 3);
-        shape2.rect = new Rectangle(425, 275, 50, 50);
+        trans.rotate(angle,(float)h/2,(float)w/2);
+        shape2.circle = new Ellipse2D.Double(h/4.0,w/4.0,100.0d,100.0d);
+        shape2.ellipse = new Ellipse2D.Double(h/4.0,w/4.0,100.0d,50.0d);
+        shape2.square = new Rectangle(h/4,w/4,100,100);
+        shape2.rectangle = new Rectangle(h/4,w/4,100,50);
+        shape2.triangle = new Polygon(new int[] {350,450,450},new int[] {200,175,225},3);
+        shape2.t1 = new Polygon(new int[] { 525, 575, 550 }, new int[] { 225, 225, 175 }, 3);
+        shape2.t2 = new Polygon(new int[] { 575, 575, 625 }, new int[] { 225, 275, 250 }, 3);
+        shape2.t3 = new Polygon(new int[] { 575, 525, 550 }, new int[] { 275, 275, 325 }, 3);
+        shape2.t4 = new Polygon(new int[] { 525, 525, 475 }, new int[] { 275, 225, 250 }, 3);
+        shape2.rect = new Rectangle(525, 225, 50, 50);
         if(index == 0) {
             int R = (int)(Math.random()*256);
             int G = (int)(Math.random()*256);
@@ -110,22 +110,23 @@ public class twoDPanel extends JPanel {
             g1.fill(rotatedShape);
         }
     }
+
     class EventHandler2D implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            if(e.getSource() == rc) {
-                color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
-                angle += 0.1;
-            }
+                if (e.getSource() == rc) {
+                    color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
+                    angle += 0.1;
+                }
 
-            if(e.getSource() == rac) {
-                color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
-                angle -= 0.1;
-            }
-            if(e.getSource() == change) {
-                color=new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
-            }
-            repaint();
+                if (e.getSource() == rac) {
+                    color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
+                    angle -= 0.1;
+                }
+                if (e.getSource() == change) {
+                    color = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
+                }
+                repaint();
         }
     }
 }
