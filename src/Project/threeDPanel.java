@@ -7,24 +7,16 @@ import javafx.geometry.Point3D;
 import javafx.scene.paint.Color;
 import javafx.geometry.Pos;
 import javafx.scene.Camera;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.PerspectiveCamera;
 import javafx.scene.Scene;
 import javafx.scene.layout.*;
-import javafx.scene.paint.Material;
 import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Box;
 import javafx.scene.shape.Cylinder;
 import javafx.scene.shape.Sphere;
 import javafx.scene.transform.Rotate;
-import javafx.stage.Stage;
-import javafx.scene.input.MouseEvent;
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.ListIterator;
-import java.util.Vector;
 
 
 public class threeDPanel extends JFXPanel {
