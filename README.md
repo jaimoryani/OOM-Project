@@ -6,7 +6,7 @@ In this project, we are drawing 2D Shapes such as Squares, Circles, Stars etc al
 
 # Problem Statement :
 
-[Group 10 Problem Statement](./Problem Statement.pdf)
+[Group 10 Problem Statement](https://github.com/jaimoryani/OOM-Project/blob/main/Problem%20Statement.pdf)
 
 -----------------------------------------------------------------------------------------------
 
