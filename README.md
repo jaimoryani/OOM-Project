@@ -21,10 +21,10 @@ In this project, we are drawing 2D Shapes such as Squares, Circles, Stars etc al
 
 # UML Diagrams :
 
-- [Use Case Diagram](./Use-Case Diagram.png)
-- [Class Diagram](./Class Diagram.png)
+- [Use Case Diagram](https://github.com/jaimoryani/OOM-Project/blob/main/Use-Case%20Diagram.png)
+- [Class Diagram](https://github.com/jaimoryani/OOM-Project/blob/main/Class%20Diagram.png)
 - [CRC Diagram](./)
-- [UML Sequence Diagram](https://github.com/jaimoryani/OOM-Project/blob/main/Sequence%20Diagram.png)
+- [Sequence Diagram](https://github.com/jaimoryani/OOM-Project/blob/main/Sequence%20Diagram.png)
 
 ------------------------------------------------------------------------------------------------
 
