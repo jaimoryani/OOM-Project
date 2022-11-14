@@ -36,7 +36,7 @@ In this project, we are drawing 2D Shapes such as Squares, Circles, Stars etc al
 
 # Presentation :
 
-[Presentation](https://docs.google.com/)
+[Presentation](https://docs.google.com/presentation/d/1s8QD53QbcTf1N3zm-UK2Dj8h8mgiu_r6iRF8T7HfV1c/edit#slide=id.g11ff4044692_0_683)
 
 ------------------------------------------------------------------------------------------------
 
