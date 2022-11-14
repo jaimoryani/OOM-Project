@@ -21,9 +21,9 @@ In this project, we are drawing 2D Shapes such as Squares, Circles, Stars etc al
 
 # UML Diagrams :
 
-- [Use Case Diagram](https://github.com/jaimoryani/OOM-Project/blob/main/Use-Case%20Diagram.png)
-- [Class Diagram](https://github.com/jaimoryani/OOM-Project/blob/main/Class%20Diagram.png)
-- [CRC Diagram](./)
+- [Use Case Diagram](https://github.com/jaimoryani/OOM-Project/blob/main/USE-CASE-2D%263D_SHAPES.pdf)
+- [Class Diagram](https://github.com/jaimoryani/OOM-Project/blob/main/CLASS-DIAGRAM-2D%263D_SHAPES.pdf)
+- [CRC Diagram](https://github.com/jaimoryani/OOM-Project/blob/main/CRC%20Diagram.pdf)
 - [Sequence Diagram](https://github.com/jaimoryani/OOM-Project/blob/main/Sequence%20Diagram.png)
 
 ------------------------------------------------------------------------------------------------
