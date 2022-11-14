@@ -28,7 +28,7 @@ In this project, we are drawing 2D Shapes such as Squares, Circles, Stars etc al
 
 ------------------------------------------------------------------------------------------------
 
-# Demo :
+# Demo Video:
 
 - [Project Execution](https://drive.google.com/file/d/1urFQzn6nNO3YRrhtSp-XOe3oiueIc5HC/view)
 - [JAR file Execution](https://drive.google.com/file/d/1qCCs0QfqWtVc7B7ntAb5vg9RLEZFdY9G/view)
