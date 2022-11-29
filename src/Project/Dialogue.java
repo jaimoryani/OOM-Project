@@ -6,13 +6,13 @@ import java.awt.CheckboxGroup;
 
 public class Dialogue {
     void entrance(String s) {
-        JOptionPane.showMessageDialog(null, s, "Welcome to ScaleiT", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, s, "Welcome to World of Shapes", JOptionPane.INFORMATION_MESSAGE);
     }
     String getName(){
         return JOptionPane.showInputDialog(null,"Enter your name","NAME",JOptionPane.QUESTION_MESSAGE);
     }
     int confirm(String naam){
-        return JOptionPane.showConfirmDialog(null,"Hello "+naam+",would you like to try ScaleIt ?" ,"Confirmation",JOptionPane.YES_NO_OPTION);
+        return JOptionPane.showConfirmDialog(null,"Hello "+naam+",would you like to try World of Shapes ?" ,"Confirmation",JOptionPane.YES_NO_OPTION);
     }
     int ChooseDimension(Object obj){
         Object[] cbg= ((Dimension)obj).cbg;

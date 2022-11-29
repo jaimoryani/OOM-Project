@@ -11,7 +11,7 @@ class MyFrame extends JFrame implements ActionListener {
     twoDPanel D2;
     threeDPanel D3;
     MyFrame(){
-        super("ScaleIt");
+        super("World of Shapes");
         d=new Dialogue();
         d.entrance("Hello");
         Container c=getContentPane();
